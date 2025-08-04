@@ -59,6 +59,7 @@ export const insertBlogPostSchema = createInsertSchema(blogPosts).omit({
   id: true,
   likes: true,
   createdAt: true,
+  authorId: true,
 });
 
 export const insertBlogCommentSchema = createInsertSchema(blogComments).omit({

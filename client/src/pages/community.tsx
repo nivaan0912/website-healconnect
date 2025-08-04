@@ -225,7 +225,7 @@ export default function Community() {
             ) : posts && posts.length > 0 ? (
               <div>
                 {posts.map((post) => (
-                  <BlogPost key={post.id} post={post} />
+                  <BlogPostComponent key={post.id} post={post} />
                 ))}
               </div>
             ) : (
